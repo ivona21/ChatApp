@@ -1,0 +1,26 @@
+{
+  "name": "chat-app",
+  "version": "0.0.1",
+  "description": "following socket io tutorial",
+  "main": "/js/index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "express": "^4.10.2",
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.0",
+    "socket.io": "^1.4.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "socket.io",
+    "node",
+    "server",
+    "chat"
+  ],
+  "author": "Ivona",
+  "license": "ISC"
+}
