@@ -5,13 +5,25 @@
         <link rel="stylesheet" href="css/build/site.css"/>
     </head>
     <body>
-        <ul id="messages"> </ul>
-        <form class="col-lg-8">
-            <input id="m" type="text" />
-            <button>Send</button>
-        </form>
+        <div class="container">
+            <div class="col-lg-9 col-md-9 col-sm-9">
+                <ul id="messages"> </ul>
+            </div>
+            <form id="nickname-form" class="col-lg-3 col-md-3 col-sm-3">
+                <label>Enter your nickname</label>
+                <br/>
+                <input id="nickname" type="text" />
+            </form>
+            <div id="massage-area" >
+                <p class="area"></p>
+                <form class="col-lg-9 col-md-9 col-sm-9">
+                    <input id="message" type="text" />
+                    <button class="btn btn-default">Send</button>
+                </form>
+            </div>
+        </div>
         <script src="/socket.io/socket.io.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <script src="js/libs/client.js"></script>
+        <script src="js/build/client.min.js"></script>
     </body>
 </html>

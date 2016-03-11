@@ -1,5 +1,16 @@
-$button-color: rgba(0, 0, 0, 0.5);
-$chat-area-background : #000;
+@import 'bootstrap';
+
+
+//colors
+$main-bg: #B4D8E7;
+$one-message-bg: #56BAEC;
+$my-message-bg: #4A789C;
+$write-message-bg: #103c3c;
+$light-text: #67DDDD;
+$dark-text: #031111;
+
+$small-distance: 10px;
+
 
 * {
     margin: 0;
@@ -9,33 +20,46 @@ $chat-area-background : #000;
 
 body {
     font: 13px Helvetica, Arial;
+    background: #daece2;
 }
 
-form {
-    background: $chat-area-background;
+#massage-area {
     padding: 3px;
     position: fixed;
     bottom: 0;
     width: 100%;
     input {
+        background-color: $write-message-bg;
+        color: $light-text;
         border: 0;
         padding: 10px;
-        width: 90%;
         margin-right: .5%;
+        width:80%;
     }
-    button {
-        width: 9%;
-        background: $button-color;
-        border: none;
-        padding: 10px;
-    }
+
+}
+
+#nickname-form {
+  & > * {
+    margin-top:$small-distance;
+  }
 }
 
 #messages {
+    background-color: $main-bg;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin-top: 15px;
+    margin-bottom: -15px;
+    border: 1px solid $write-message-bg;
     li {
+        margin: 8px 15px;
         padding: 5px 10px;
+        background-color: $one-message-bg;
+        color: $dark-text;
+    }
+    li.myMessage{
+      background-color: $my-message-bg;
+      color: $light-text;
+      text-align: right;
     }
 }
